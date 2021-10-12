@@ -245,6 +245,94 @@ a.nav-link {
     color: #000;
 }
 
+/* search-suggestion */
+
+.search-suggestion {
+    margin: 50px 0;
+    width: 100%;
+}
+.search-suggestion-container{
+    width: 100%;
+    display: grid;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 80px repeat(6, 100px);
+    color: rgb(138, 136, 136);
+    font-size: 18px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.number-recipes{
+    grid-area: 1/2/2/4;
+    position: relative;
+}
+
+.by-ingredient{
+    grid-area: 2/2/3/4;
+    position: relative;
+}
+
+.winter{
+    grid-area: 3/2/4/4;
+    position: relative;
+}
+
+.vegetarian {
+    grid-area: 4/2/5/4;
+    position: relative;
+}
+
+.deserts {
+    grid-area: 5/2/6/4;
+    position: relative;
+}
+
+.lunch {
+    grid-area: 6/2/7/4;
+    position: relative;
+}
+
+.italian {
+    grid-area: 7/2/8/4;
+    position: relative;
+}
+
+.suggestion-text {
+    position: absolute;
+    height: 80px;
+    width: auto;
+    top: 45px;
+    left: 140px;
+}
+
+.suggestion-incon {
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    width: 80px;
+    height: 80px;
+    border: 2px dashed #5B98B7;
+    border-radius: 10px;
+}
+
+.suggestion-incon i {
+    color: #5B98B7;
+    font-size: 300%;
+    margin-top: 20%;
+   
+}
+
+.number-recipes h3{
+    font-size: 24px;
+}
+
+.number-recipes h3 span {
+    display: block;
+    color: #5B98B7;
+    font-size: 40px;
+}
+
 /* Media Queries */
 @media(max-width:300px) {
 
