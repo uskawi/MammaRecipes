@@ -433,6 +433,54 @@ a.nav-link {
         color: #fff;
         text-shadow: 1px 1px #000;
     }
+
+    /* search-suggestion */
+
+    .search-suggestion-container{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 70px repeat(3, 100px);
+    }
+    
+    .number-recipes{
+        grid-area: 1/2/2/6;
+        text-align: center;
+    }
+    
+    .by-ingredient{
+        grid-area: 2/2/3/4;
+    }
+    
+    .winter{
+        grid-area: 2/4/3/6;
+    }
+    
+    .vegetarian {
+        grid-area: 3/2/4/4;
+    }
+    
+    .deserts {
+        grid-area: 3/4/4/6;
+    }
+    
+    .lunch {
+        grid-area: 4/2/5/4;
+    }
+    
+    .italian {
+        grid-area: 4/4/5/6;
+    }
+
+    .suggestion-text {
+        left: 130px;
+        font-size: 14px;
+    }
+
+    .number-recipes h3 span {
+        display: inline-block;
+        color: #5B98B7;
+        margin-right: 30px;
+       
+    }
 }
 
 @media(min-width:850px) {
