@@ -244,3 +244,118 @@ a.nav-link {
     border-color: #e21515;
     color: #000;
 }
+
+/* Media Queries */
+@media(max-width:300px) {
+
+    /* first-belt */
+
+    .brand a i {
+        display: none;
+    }
+
+    .second-belt
+
+    /* second-belt */
+    #searchIcon span {
+        margin-left: 0;
+    }
+
+    /* search */
+
+    .search {
+        height: 90px;
+        grid-template-rows: 50px 40px;
+    }
+
+
+    #searchForm {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .form-icon {
+        right: 15px;
+    }
+
+}
+
+@media(min-width:558px) {
+
+    /* First-belt */
+    .first-belt {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    /* second-belt */
+
+    .brand {
+        width: 70%;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .brand a i {
+        margin-left: 5px;
+    }
+
+    #searchIcon span {
+        margin-left: 70%;
+    }
+
+    /* search */
+
+    #searchForm {
+        width: 60%;
+    }
+
+    .form-icon {
+        right: 22%;
+    }
+
+    /* Navbar */
+    .navbar-nav {
+        border: none;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .nav-item {
+        border: none;
+        background-color: #5B98B7;
+        margin-left: 12%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        color: #dbeefa;
+    }
+
+    a.nav-link {
+        color: #dbeefa;
+        background-color: #5B98B7;
+    }
+
+    .subscribe {
+        line-height: 40px;
+    }
+
+    .nav-link.active {
+        color: #fff;
+        text-shadow: 1px 1px #000;
+    }
+}
+
+@media(min-width:850px) {
+
+    /* second-belt */
+
+    #searchIcon span {
+        margin-left: 80%;
+    }
+
+    .nav-item {
+        margin-left: 15%;
+    }
+}
