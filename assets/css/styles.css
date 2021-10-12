@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,100;1,300;1,400&family=Roboto:ital,wght@0,400;0,500;1,100;1,300;1,700&display=swap?family=Source+Code+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif; 
+font-family: 'Source Code Pro', monospace;*/
+
+/* General */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    color: #000;
+    background-color: #fff;
+}
+
+.bottom-border {
+    border-bottom: 2px solid #000;
+}
+
+/* Colors */
+
+.navbar-background-color {
+    background-color: #5B98B7;
+}
+
+.bg-color-navbar-toggler {
+    color: #dbeefa;
+}
+
+.bg-color-footer {
+    background-color: rgb(214, 207, 207);
+}
+
+/* Header */
+
+/* first-belt */
+
+.first-belt {
+    width: 100%;
+    height: 50px;
+    background: #5B98B7;
+    color: #dbeefa;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 50px;
+    text-align: center;
+}
+
+/* second-belt */
+
+.second-belt {
+    height: 60px;
+    width: 100%;
+    position: relative;
+}
+
+.brand {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    position: absolute;
+    line-height: 60px;
+
+
+}
+
+.brand a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #5B98B7;
+}
+
+.brand a i {
+    color: rgb(143, 219, 67);
+    font-size: 120%;
+}
+
+/* Search Bar */
+#searchIcon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20%;
+    height: 100%;
+}
+
+#searchIcon span {
+    margin-left: 50%;
+}
+
+#searchIcon span i {
+    color: rgb(138, 136, 136);
+    font-size: 130%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Search  */
+.search {
+    margin: 20px 0;
+    height: 70px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 30px 40px;
+}
+
+.search-text-grid {
+    min-width: 33%;
+    grid-area: 1/2/2/3;
+    text-align: center;
+    position: relative;
+}
+
+.search-text {
+    width: 100%;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(138, 136, 136);
+}
+
+.searchForm-grid {
+    min-width: 33%;
+    grid-area: 2/2/3/3;
+    position: relative;
+}
+
+#searchForm {
+    height: 30px;
+    margin: 0 auto;
+}
+
+#searchForm input {
+    width: 100%;
+    height: 30px;
+    border: 1.5px solid rgb(138, 136, 136);
+    border-radius: 4px;
+    background-color: #fff;
+    color: rgb(138, 136, 136);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.form-icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5%;
+}
+
+.form-icon i {
+    font-size: 120%;
+    color: rgb(138, 136, 136);
+    cursor: pointer;
+}
+
+/* ResultsCount */
+
+#ResultsCount {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #000;
+    line-height: 50px;
+    text-align: center;
+}
+
+/* Bootsrap */
+
+/* Navbar */
+
+.navbar {
+    height: 70px;
+}
+
+.navbar-toggler {
+    margin-right: 15px;
+    color: #dbeefa;
+    font-size: 120%;
+    margin-left: 15px;
+}
+
+.navbar-nav {
+    border: 2px solid #000;
+    text-align: center;
+    width: 60%;
+    margin-left: 10px;
+    margin-top: 35px;
+    margin-bottom: 0;
+}
+
+.nav-item {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #5B98B7;
+    height: 50px;
+    background-color: #fff;
+}
+
+a.nav-link {
+    color: #5B98B7;
+}
+
+.subscribe {
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+
+
+.nav-link.active {
+    color: #000;
+}
+
+.hover-nav-brand {
+    color: darkgreen;
+}
+
+.hover-nav-item {
+    background-color: beige;
+    color: #e21515;
+}
+
+.hover-nav-link-active {
+    border-color: #e21515;
+    color: #000;
+}
