@@ -245,6 +245,91 @@ a.nav-link {
     color: #000;
 }
 
+/* recipes-highlight */
+
+.recipes-highlight {
+    height: 750px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5% 55% 5% 30% 5%;
+    grid-template-rows: auto auto;
+}
+
+.recipes-highlight-photo {
+    height: 400px;
+    width: 100%;
+    grid-area: 1/1/2/6;
+    position: relative;
+}
+
+.recipes-highlight-header {
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    color: #f1620e;
+
+
+    
+
+}
+
+.recipes-highlight-photo img {
+    width: 100%;
+    height: 100%;
+    border-bottom: 4px solid #5B98B7;
+}
+
+
+
+.allergens-recipes {
+    margin-top: 5%;
+    width: 100%;
+    height: 320px;
+    border: 2px dashed #5B98B7;
+    color: rgb(138, 136, 136);
+    grid-area: 2/2/3/5;
+
+}
+
+.allergens-recipes-header {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin: 5% 15px;
+}
+
+.hr-allergens-recipes {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #5B98B7;
+    border: 1px solid #1085c0;
+}
+
+.allergens {
+    line-height: 2;
+    padding-left: 5%;
+}
+
+.allergens li {
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 80%;
+    padding-left: 5%;
+    cursor: pointer;
+}
+
+.allergens li i {
+    margin-right: 5%;
+    color: rgb(143, 219, 67);
+    font-size: 120%;
+}
+
 /* search-suggestion */
 
 .search-suggestion {
@@ -483,6 +568,14 @@ a.nav-link {
     }
 }
 
+@media(min-width: 557px) and (max-width: 850px){
+    .allergens-recipes {
+        margin-top: 50px;
+        margin-left: 40px;
+        grid-area: 2/1/3/4;   
+    }
+} 
+
 @media(min-width:850px) {
 
     /* second-belt */
@@ -493,5 +586,140 @@ a.nav-link {
 
     .nav-item {
         margin-left: 15%;
+    }
+
+    /* recipes-highlight */
+
+.recipes-highlight {
+    height: 750px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5% 55% 5% 30% 5%;
+    grid-template-rows: auto auto;
+}
+
+.recipes-highlight-photo {
+    height: 400px;
+    width: 100%;
+    grid-area: 1/1/2/6;
+    position: relative;
+}
+
+.recipes-highlight-header {
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    color: #f1620e;
+    
+}
+
+.recipes-highlight-photo img {
+    width: 100%;
+    height: 100%;
+    border-bottom: 4px solid #5B98B7;
+}
+
+
+
+.allergens-recipes {
+    margin-top: 5%;
+    width: 100%;
+    height: 320px;
+    border: 2px dashed #5B98B7;
+    color: rgb(138, 136, 136);
+    grid-area: 2/2/3/5;
+
+}
+
+.allergens-recipes-header {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin: 5% 15px;
+}
+
+.hr-allergens-recipes {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #5B98B7;
+    border: 1px solid #1085c0;
+}
+
+.allergens {
+    line-height: 2;
+    padding-left: 5%;
+}
+
+.allergens li {
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 80%;
+    padding-left: 5%;
+    cursor: pointer;
+}
+
+.allergens li i {
+    margin-right: 5%;
+    color: rgb(143, 219, 67);
+    font-size: 120%;
+}
+      /* recipes-highlight */
+
+.recipes-highlight{
+    height: 450px;
+}
+
+.recipes-highlight-photo {
+    height: 450px;
+    grid-area: 1/1/3/3;
+}
+
+.recipes-highlight-photo img {
+    border-bottom: none;
+}
+
+.allergens-recipes {
+    margin-top: 90px;
+    grid-area: 1/4/3/5;
+}
+
+    /* search-suggestion */
+
+    .search-suggestion-container{
+        grid-template-columns: repeat(10, 1fr);
+    }
+    
+    .number-recipes{
+        grid-area: 1/4/2/8;
+    }
+    
+    .by-ingredient{
+        grid-area: 2/2/3/5;
+    }
+    
+    .winter{
+        grid-area: 2/5/3/8;
+    }
+    
+    .vegetarian {
+        grid-area: 2/8/3/10;
+    }
+    
+    .deserts {
+        grid-area: 3/2/4/5;
+    }
+    
+    .lunch {
+        grid-area: 3/5/4/8;
+    }
+    
+    .italian {
+        grid-area: 3/8/4/10;
     }
 }
