@@ -15,7 +15,7 @@
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!--Link to Css-->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="assets/scripts/EdamamApi.js"></script>
+</head>
 
 <body>
     <header>
@@ -136,19 +136,40 @@
             <div id="data">
             </div>
         </div>
-        <div class="form-container">
-            <form action="">
-          
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="name">
-          
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder=" name">
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="How Can We Help?"></textarea>
-              <input type="submit" value="Submit">
+        <div class="contact">
+            <div class="contact-container hide">
+                <div class="contact-header">
+                    <h3>Contact Us</h3>
+                </div>
+                <div class="conatct-form">
+                    <div class="close-contact"><i class="far fa-times-circle"></i></div>
+                    <form onsubmit="return sendMail(this);">
+                        <input type="text" name="name" class="name-input" id="name" placeholder="Name" required />
+                        <input type="text" name="emailaddress" class="email-input" id="emailAddress" placeholder="Email"
+                            required />
+                        <textarea rows="6" name="message" class="message-form" id="message" placeholder="Message"
+                            required></textarea>
+                        <button type="submit" class="contact-submit-btn">Submit</button>
+                    </form>
+                </div>
+                <div id="contactUserMessage">
+                    <!-- <div class="email-confirmation">
+                        <h3>Your Message Bein Send Successfully</h3>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- <div class="form-container">
+            <form onsubmit="return email(this);" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="name" required>
+                <label for="Useremail">email</label>
+                <input type="email" id="userEmail" name="Email" placeholder="Email" required>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="How Can We Help?" required></textarea>
+                <button type="submit">Send Project Request</button>
             </form>
-          </div>
+        </div> -->
     </section>
     <footer>
         <div class="footer-container bg-color-footer  color-footer padding-wrapper">
@@ -192,8 +213,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-    <!-- <script src="assets/script/main.js"></script> -->
-   
+    <!-- Email.js -->
+
+    <!-- edamam recipes  -->
+    <script src="assets/scripts/EdamamApi.js"></script>
+    <!-- email -->
+    <script src="assets/scripts/email.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_CMP7cpt9RdyCmlHNyJeuH");
+        })();
+
+    </script>
+
+
+
 </body>
 
 </html>
