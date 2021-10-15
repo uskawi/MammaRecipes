@@ -270,7 +270,6 @@ a.nav-link {
     width: 100%;
     height: 100%;
     border-bottom: 4px solid #5B98B7;
-
 }
 
 .allergens-recipes {
@@ -514,6 +513,107 @@ a.nav-link {
     font-weight: 500;
 }
 
+/* Contact */
+
+.hide {
+    display: none;
+}
+.contact {
+    width: 90%;
+    margin: 50px auto;
+    height: 350px;
+    position: absolute;
+    top:80px;
+    left: 5%;   
+    z-index: 3;
+}
+
+.contact-container {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: rgb(138, 136, 136);
+    font-size: 18px;
+    position: relative;
+    border-left: 3px solid #5B98B7 ;
+    border-right: 3px solid #5B98B7;
+    border-bottom: 3px solid #5B98B7;
+}
+
+.contact-header {
+    text-align: center;
+    background-color: #5B98B7;
+    color: #fff;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact-submit-btn {
+    width: 140px;
+    height: 40px;
+    background-color: #5B98B7;
+    color: #ffff;
+    margin-top: 10px;
+    
+}
+
+.conatct-form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.name-input, .email-input, .message-form {
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    border: 2px solid rgb(138, 136, 136);
+    border-radius: 4px;
+}
+
+.message-form {
+    height: 100px;
+}
+
+/* contactUserMessage */
+
+.email-confirmation {
+    border: 2px dashed #1085c0;
+    width: 60%;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 10%;
+    left:20%;
+    background-color: #ffff;
+    opacity: 0.7;
+
+}
+.email-confirmation h3 {
+    margin-top: 20px;
+    color: #000;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.email-confirmation span {
+    margin-right: 8px;
+    color: #e21515;
+   
+}
+
+.close-contact {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* .userMessage h3 span {
+    margin-right: 8px;
+    color: #e21515;
+    font-size: 24px;
+} */
 /* Footer */
 .footer-container {
     border-top: 2px dashed #1085c0;
