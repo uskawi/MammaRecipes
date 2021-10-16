@@ -86,27 +86,25 @@ body {
     font-size: 120%;
 }
 
-/* Search Bar */
-#searchIcon {
+/* Search icon */
+.searchIcon-div {
     position: absolute;
     right: 0;
     top: 0;
-    width: 20%;
+    width: 7%;
     height: 100%;
+    margin-right: 15px;
+    text-align: right;
 }
 
-#searchIcon span {
-    margin-left: 50%;
-}
-
-#searchIcon span i {
+#searchIcon {
     color: rgb(138, 136, 136);
     font-size: 130%;
     margin-top: 20px;
     cursor: pointer;
 }
 
-/* Search  */
+/* Search   */
 .search {
     margin-bottom: 40px;
     margin-top: 20px;
@@ -142,7 +140,7 @@ body {
     margin: 0 auto;
 }
 
-#searchForm input {
+#searchInput {
     width: 100%;
     height: 30px;
     border: 1.5px solid rgb(138, 136, 136);
@@ -198,40 +196,37 @@ body {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-    color: #5B98B7;
+    /* color: #5B98B7; */
     height: 50px;
+    /* background-color: #fff; */
+}
+
+.nav-item-colors {
+    color: #5B98B7;
     background-color: #fff;
 }
+
+.nav-item-colors-hover {
+    background-color: #5B98B7;
+    color: #fff;
+}
+
 
 a.nav-link {
     color: #5B98B7;
 }
 
-.subscribe {
+.new-item {
     height: 50px;
-    line-height: 50px;
+    line-height: 40px;
     cursor: pointer;
 }
-
-
 
 .nav-link.active {
     color: #000;
 }
 
-.hover-nav-brand {
-    color: darkgreen;
-}
 
-.hover-nav-item {
-    background-color: beige;
-    color: #e21515;
-}
-
-.hover-nav-link-active {
-    border-color: #e21515;
-    color: #000;
-}
 
 /* recipes-highlight */
 
@@ -518,7 +513,7 @@ a.nav-link {
 .hide {
     display: none;
 }
-#contact {
+#contact-div {
     width: 90%;
     margin: 0 auto;
     position: absolute;
@@ -816,7 +811,7 @@ a.nav-link {
     
 }
 
-@media(min-width:558px) {
+@media(min-width:575px) {
 
     /* First-belt */
     .first-belt {
@@ -859,6 +854,7 @@ a.nav-link {
         margin-top: 0;
     }
 
+
     .nav-item {
         border: none;
         background-color: #5B98B7;
@@ -866,6 +862,7 @@ a.nav-link {
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
         color: #dbeefa;
+
     }
 
     a.nav-link {
@@ -873,9 +870,9 @@ a.nav-link {
         background-color: #5B98B7;
     }
 
-    .subscribe {
+    /* .new-item {
         line-height: 40px;
-    }
+    } */
 
     .nav-link.active {
         color: #fff;
@@ -966,7 +963,7 @@ a.nav-link {
 
 }
 
-@media(min-width: 557px) and (max-width: 850px) {
+@media(min-width: 575px) and (max-width: 850px) {
 
     .recipes-highlight {
         grid-template-rows: 400px 350px;
@@ -1104,7 +1101,7 @@ a.nav-link {
         margin-left: 4%;
     }
 
-    #contact {
+    #contact-div {
         width: 70%;
     }
 
