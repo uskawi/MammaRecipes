@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="">
-    <title>M.M.A-Masters</title>
+    <title>MammaRecipes</title>
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -61,7 +61,7 @@
                     <li class="nav-item bottom-border nav-item-colors">
                         <p class="new-item">Subscribe</p>
                     </li>
-                    <li class="nav-item nav-item-colors">
+                    <li class="nav-item nav-item-colors contact">
                         <p class="new-item">Contact</p>
                     </li>
                 </ul>
@@ -139,13 +139,13 @@
                 </div>
             </div>
         </div>
-        <div id="contact-div" class="">
+        <div id="contact-div" class="hide">
             <div class="contact-container">
                 <div class="contact-header">
                     <h3>Contact Us</h3>
                 </div>
                 <div class="conatct-form">
-                    <div class="close-contact"><p>Close</p><i class="far fa-times-circle"></i></div>
+                    <div id="closeContact" class="close-contact"><p>Close</p><i class="far fa-times-circle"></i></div>
                     <form onsubmit="return sendMail(this);">
                         <input type="text" name="name" class="name-input" id="name" placeholder="Name" required />
                         <input type="text" name="emailaddress" class="email-input" id="emailAddress" placeholder="Email"
@@ -173,7 +173,7 @@
                     Subscribe
                 </p>
             </div>
-            <div class="footer-email">
+            <div class="contact footer-email">
                 <p>Contact</p>
             </div>
             <div class="footer-magazin">

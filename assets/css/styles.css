@@ -513,23 +513,24 @@ a.nav-link {
 .hide {
     display: none;
 }
+
 #contact-div {
-    width: 90%;
-    margin: 0 auto;
-    position: absolute;
-    top:80px;
-    left: 5%;   
+    width: 100%;
+    position: fixed;
+    top: 100px;
+    left: 0;
     z-index: 3;
 }
 
 .contact-container {
-    width: 100%;
+    width: 95%;
     height: 350px;
+    margin: 0 auto;
     background-color: #fff;
     color: rgb(138, 136, 136);
     font-size: 18px;
     position: relative;
-    border: 3px solid #5B98B7 ;
+    border: 3px solid #5B98B7;
 }
 
 .contact-header {
@@ -545,7 +546,7 @@ a.nav-link {
     height: 40px;
     background-color: #5B98B7;
     color: #ffff;
-    
+
 }
 
 .conatct-form {
@@ -553,7 +554,9 @@ a.nav-link {
     margin: 0 auto;
 }
 
-.name-input, .email-input, .message-form {
+.name-input,
+.email-input,
+.message-form {
     width: 100%;
     height: 40px;
     margin: 5px 0;
@@ -578,21 +581,23 @@ a.nav-link {
     border-radius: 10px;
     position: absolute;
     top: 10%;
-    left:20%;
+    left: 20%;
     background-color: #ffff;
     opacity: 0.7;
 
 }
+
 .email-confirmation h3 {
     margin-top: 20px;
     color: #000;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .email-confirmation span {
     margin-right: 8px;
     color: #e21515;
-   
+
 }
 
 .close-contact {
@@ -600,9 +605,7 @@ a.nav-link {
     bottom: 10px;
     right: 20px;
     display: flex;
-}
-
-.close-contact {
+    cursor: pointer;
     height: 20px;
 }
 
@@ -622,7 +625,7 @@ a.nav-link {
     justify-items: center;
     font-size: 12px;
     color: rgb(138, 136, 136);
-    margin-top: 30px ;
+    margin-top: 30px;
 }
 
 .logo {
@@ -630,14 +633,17 @@ a.nav-link {
 }
 
 .footer-subscribe {
+    cursor: pointer;
     grid-area: 2/1/3/2;
 }
 
 .footer-magazin {
+    cursor: pointer;
     grid-area: 2/3/3/4;
 }
 
 .footer-email {
+    cursor: pointer;
     grid-area: 2/2/3/3;
 }
 
@@ -646,14 +652,17 @@ a.nav-link {
 }
 
 .facebook {
+    cursor: pointer;
     grid-area: 4/1/5/2;
 }
 
 .instagram {
+    cursor: pointer;
     grid-area: 4/2/5/3;
 }
 
 .youtube {
+    cursor: pointer;
     grid-area: 4/3/5/4;
 }
 
@@ -780,35 +789,35 @@ a.nav-link {
     /* Footer */
 
     .footer-container {
-       
+
         font-size: 14px;
-      
+
     }
-    
+
     .footer-email {
         grid-area: 3/2/4/3;
     }
-    
+
     .social-media-message {
         grid-area: 4/1/5/4;
     }
-    
+
     .facebook {
         grid-area: 5/1/6/2;
     }
-    
+
     .instagram {
         grid-area: 5/2/6/3;
     }
-    
+
     .youtube {
         grid-area: 5/3/6/4;
     }
-    
+
     .copyright {
         grid-area: 6/1/7/4;
     }
-    
+
 }
 
 @media(min-width:575px) {
@@ -961,6 +970,17 @@ a.nav-link {
         font-weight: 400;
     }
 
+    /* contact */
+    #contact-div {
+        width: 60%;
+        top: 20px;
+        left: 20%;
+    }
+
+    .contact-container {
+        width: 100%;
+        height: 320px;
+    }
 }
 
 @media(min-width: 575px) and (max-width: 850px) {
@@ -968,14 +988,14 @@ a.nav-link {
     .recipes-highlight {
         grid-template-rows: 400px 350px;
     }
-    
+
     .allergens-recipes {
         margin-top: 50px;
         margin-left: 40px;
         grid-area: 2/1/3/4;
         margin-bottom: 0;
         max-height: 320px;
-       
+
     }
 
 }
@@ -997,8 +1017,8 @@ a.nav-link {
     .recipes-highlight {
         display: grid;
         grid-template-columns: 5% 55% 5% 30% 5%;
-        grid-template-rows:  50px 350px 50px;
-       
+        grid-template-rows: 50px 350px 50px;
+
     }
 
 
@@ -1102,7 +1122,12 @@ a.nav-link {
     }
 
     #contact-div {
-        width: 70%;
+        top: 200px;
     }
+
+    .contact-container {
+        height: 350px;
+    }
+
 
 }
