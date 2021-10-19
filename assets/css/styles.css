@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,100;1,300;1,400&family=Roboto:ital,wght@0,400;0,500;1,100;1,300;1,700&display=swap?family=Source+Code+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,100;1,300;1,400&family=Roboto:ital,wght@0,400;0,500;1,100;1,300;1,700&display=swap?family=Source+Code+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap?family=Titillium+Web:wght@600&display=swap');
 
 /* font-family: 'Lato', sans-serif;
 font-family: 'Roboto', sans-serif; 
@@ -21,19 +21,34 @@ body {
     border-bottom: 2px solid #000;
 }
 
-/* Colors */
-
-.navbar-background-color {
-    background-color: #5B98B7;
+/* classes to use in main.js */
+.suggestion-before {
+    border: 2px dashed #5B98B7;
+    color: #5B98B7;
 }
 
-.bg-color-navbar-toggler {
-    color: #dbeefa;
+.suggestion-after {
+    border: 2px solid #5B98B7;
+    color: rgb(143, 219, 67);
 }
 
-/* .bg-color-footer {
-    background-color: rgb(214, 207, 207);
-} */
+.subscribe-button-before {
+    color: #fff;
+    background-color: #007C89;
+}
+
+.subscribe-button-after {
+    color: #000;
+    background-color: rgb(143, 219, 67);
+}
+
+#top {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
 
 /* Header */
 
@@ -52,7 +67,8 @@ header {
     height: 40px;
     padding-top: 10px;
     margin-bottom: 10px;
-} 
+}
+
 /* brand */
 .brand {
     float: left;
@@ -61,9 +77,6 @@ header {
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 1px;
-    /* margin-bottom: 20px */
-
-
 }
 
 .brand a {
@@ -81,14 +94,12 @@ header {
 
 .subscribe {
     float: right;
-    height: 100%;  
+    height: 100%;
 }
 
 #subscribe-button {
     width: 100px;
     margin-right: 15px;
-    color: #fff;
-    background-color: rgb(143, 219, 67);
     font-weight: 400;
     font-size: 15px;
     border: 2px solid #5B98B7;
@@ -96,9 +107,8 @@ header {
 }
 
 /* Search   */
+
 .search {
-    /* position: absolute;
-    top: 60px; */
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -136,7 +146,7 @@ header {
     border: 1.5px solid rgb(138, 136, 136);
     border-radius: 4px;
     background-color: #fff;
-    color: rgb(138, 136, 136);
+    color: #000;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 400;
@@ -156,12 +166,10 @@ header {
     cursor: pointer;
 }
 
-/* Bootsrap */
-
 /* recipes-highlight */
 
 .recipes-highlight {
-    max-height: auto;
+    /* height: auto; */
     width: 100%;
     display: grid;
     grid-template-columns: 5% 55% 5% 30% 5%;
@@ -175,7 +183,6 @@ header {
     grid-area: 1/1/2/6;
     position: relative;
     z-index: 1;
-    /* background-color: saddlebrown; */
     opacity: .8;
 }
 
@@ -245,7 +252,7 @@ header {
 /* search-suggestion */
 
 .search-suggestion {
-    margin-top: 50px;
+    margin: 30px 0;
     width: 100%;
 }
 
@@ -259,6 +266,7 @@ header {
     color: rgb(138, 136, 136);
     font-size: 18px;
     font-family: 'Source Code Pro', monospace;
+    border-bottom: 25px;
 }
 
 .number-recipes {
@@ -310,18 +318,17 @@ header {
     left: 140px;
 }
 
-.suggestion-incon {
+.suggestion-icon {
     position: absolute;
     left: 40px;
     top: 20px;
     width: 80px;
     height: 80px;
-    border: 2px dashed #5B98B7;
     border-radius: 10px;
 }
 
-.suggestion-incon i {
-    color: #5B98B7;
+.suggestion-icon i {
+
     font-size: 300%;
     margin-top: 20%;
 
@@ -341,25 +348,27 @@ header {
 
 /* ResultsCount */
 
-.ResultsCountHeader {
-    width: 80%;
-    height: 50px;
-    margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 50px;
-    color: rgb(138, 136, 136);
-    line-height: 50px;
-    text-align: left;
+#resultsCount {
+    text-align: center;
+    width: 100%;
 }
 
+#resultsCount h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    height: 50px;
+    color: #007C89;
+    padding: 0 15px;
+    line-height: 50px;
+}
 
 .recipes-template {
     width: 100%;
 }
 
 #data {
+    margin-top: 50px;
     width: 100%;
     display: grid;
     row-gap: 30px;
@@ -407,6 +416,7 @@ header {
     line-height: 1;
     letter-spacing: 1px;
     text-align: left;
+
 }
 
 .item1 {
@@ -438,21 +448,35 @@ header {
     font-weight: 500;
 }
 
-/* Contact */
 
-.hide {
-    display: none;
+#more-info {
+    width: 100%;
 }
 
-#contact-div {
+.info {
+    width: 100%;
+    height: 300px;
+}
+
+.info img {
+    width: 300px;
+    border: 5px solid #e21515;
+}
+
+
+/* Contact and subscribe*/
+
+#contact-div,
+#subscribe-div {
     width: 100%;
     position: fixed;
     top: 100px;
     left: 0;
-    z-index: 3;
+    z-index: 5;
 }
 
-.contact-container {
+.contact-container,
+.subscribe-container {
     width: 95%;
     height: 350px;
     margin: 0 auto;
@@ -463,7 +487,12 @@ header {
     border: 3px solid #5B98B7;
 }
 
-.contact-header {
+.subscribe-container {
+    height: 250px;
+}
+
+.contact-header,
+.subscribe-header {
     text-align: center;
     background-color: #5B98B7;
     color: #fff;
@@ -471,15 +500,17 @@ header {
     margin: 0 auto;
 }
 
-.contact-submit-btn {
+.contact-submit-btn,
+.subscribe-submit-btn {
     width: 140px;
     height: 40px;
     background-color: #5B98B7;
     color: #ffff;
-
+    border-radius: 6px;
 }
 
-.conatct-form {
+.conatct-form,
+.subscribe-form {
     width: 90%;
     margin: 0 auto;
 }
@@ -499,9 +530,10 @@ header {
     margin-bottom: 0;
 }
 
-/* contactUserMessage */
+/* contactUserMessage and subscribeUserMessage*/
 
-.email-confirmation {
+.email-confirmation,
+.subscribe-confirmation {
     border: 2px dashed #1085c0;
     width: 60%;
     height: 100px;
@@ -513,24 +545,25 @@ header {
     top: 10%;
     left: 20%;
     background-color: #ffff;
-    opacity: 0.7;
-
 }
 
 .email-confirmation h3 {
+    margin-top: 20px;
     margin-top: 20px;
     color: #000;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.email-confirmation span {
+.email-confirmation span,
+.subscribe-confirmation span {
     margin-right: 8px;
     color: #e21515;
 
 }
 
-.close-contact {
+.close-contact,
+.close-subscribe {
     position: absolute;
     bottom: 10px;
     right: 20px;
@@ -539,14 +572,26 @@ header {
     height: 20px;
 }
 
-.close-contact i {
+.close-contact i,
+.close-subscribe i {
     font-size: 120%;
     margin: 5px 0 0 8px;
 }
 
 /* Footer */
+
 .footer-container {
-    border-top: 2px dashed #1085c0;
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+    border-top: 2px solid rgb(143, 219, 67);
+}
+
+.footer-img {
+    display: none;
+}
+
+.footer-content {
     padding: 30px 10px;
     width: 100%;
     display: grid;
@@ -555,7 +600,7 @@ header {
     justify-items: center;
     font-size: 12px;
     color: rgb(138, 136, 136);
-    margin-top: 30px;
+    background-color: #d4dbd3;
 }
 
 .logo {
@@ -567,14 +612,9 @@ header {
     grid-area: 2/1/3/2;
 }
 
-.footer-magazin {
-    cursor: pointer;
-    grid-area: 2/3/3/4;
-}
-
 .footer-email {
     cursor: pointer;
-    grid-area: 2/2/3/3;
+    grid-area: 2/3/3/4;
 }
 
 .social-media-message {
@@ -636,18 +676,13 @@ header {
 
 @media(max-width:300px) {
 
-    /* first-belt */
+    /* top bar */
 
     .brand a i {
         display: none;
     }
 
-    .second-belt
 
-    /* second-belt */
-    #searchIcon span {
-        margin-left: 0;
-    }
 
     /* search */
 
@@ -669,7 +704,11 @@ header {
     /* recipes-highlight */
 
     .recipes-highlight {
-        height: 700px;
+        height: 340px;
+    }
+
+    .allergens-recipes {
+        display: none;
     }
 
     /* search-suggestion */
@@ -692,18 +731,16 @@ header {
         font-size: 14px;
     }
 
-    .suggestion-incon {
+    .suggestion-icon {
         left: 50px;
         top: 20px;
         width: 50px;
         height: 50px;
-
     }
 
-    .suggestion-incon i {
+    .suggestion-icon i {
         font-size: 150%;
         margin-top: 20%;
-
     }
 
     .number-recipes h3 {
@@ -716,51 +753,17 @@ header {
         height: 480px;
     }
 
-    /* Footer */
-
-    .footer-container {
-
-        font-size: 14px;
-
-    }
-
-    .footer-email {
-        grid-area: 3/2/4/3;
-    }
-
-    .social-media-message {
-        grid-area: 4/1/5/4;
-    }
-
-    .facebook {
-        grid-area: 5/1/6/2;
-    }
-
-    .instagram {
-        grid-area: 5/2/6/3;
-    }
-
-    .youtube {
-        grid-area: 5/3/6/4;
-    }
-
-    .copyright {
-        grid-area: 6/1/7/4;
+    /* subscribe */
+    .subscribe-container {
+        height: 300px;
     }
 
 }
 
 @media(min-width:575px) {
 
-    /* First-belt */
-    .first-belt {
-        font-size: 18px;
-        font-weight: 600;
-        text-align: right;
-        padding-right: 20px;
-    }
 
-    /* second-belt */
+    /* top bar */
 
     .brand {
         width: 70%;
@@ -770,10 +773,6 @@ header {
 
     .brand a i {
         margin-left: 5px;
-    }
-
-    #searchIcon span {
-        margin-left: 70%;
     }
 
     /* search */
@@ -868,37 +867,53 @@ header {
         font-weight: 400;
     }
 
-    /* contact */
-    #contact-div {
+    /* contact and subscribe*/
+    #contact-div,
+    #subscribe-div {
         width: 60%;
-        top: 20px;
+        top: 160px;
         left: 20%;
     }
 
     .contact-container {
         width: 100%;
-        height: 320px;
+        height: 350px;
     }
 
-    /* top bar */
-    
-    .top-bar {
-        margin-bottom: 0;
-    } 
-
-        /* Search   */
-
-    .search {
-        grid-template-rows: 20px 30px 15px;
+    .subscribe-container {
+        width: 100%;
+        height: 250px;
     }
-    
-    .search-text-grid {
-        min-width: 33%;
-        grid-area: 1/2/2/3;
-        text-align: center;
-        position: relative;
+
+    .contact-submit-btn,
+    .subscribe-submit-btn {
+        margin-top: 15px;
     }
-    
+
+
+    /* footer */
+
+    .footer-img {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 302px;
+        width: 50%;
+        border-top: 2px solid;
+    }
+
+    .footer-img  img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+    }
 }
 
 @media(min-width: 575px) and (max-width: 850px) {
@@ -919,16 +934,6 @@ header {
 }
 
 @media(min-width:850px) {
-
-    /* second-belt */
-
-    #searchIcon span {
-        margin-left: 80%;
-    }
-
-    .nav-item {
-        margin-left: 15%;
-    }
 
     /* recipes-highlight */
 
@@ -999,6 +1004,7 @@ header {
         cursor: pointer;
         opacity: 0.8;
         height: 500px;
+        padding-right: 10px;
     }
 
 
@@ -1012,8 +1018,9 @@ header {
 
     .description {
         padding-top: 10px;
-        padding-left: 20px;
+        /* padding-left: 20px; */
         height: 70px;
+        text-align: justify;
     }
 
 
@@ -1022,6 +1029,7 @@ header {
     }
 
     .item2 {
+        width: 90%;
         grid-area: 1/2/3/3;
     }
 
@@ -1039,12 +1047,18 @@ header {
         margin-left: 4%;
     }
 
-    #contact-div {
+    /* contact and subscribe */
+    #contact-div,
+    #subscribe-div {
         top: 200px;
     }
 
     .contact-container {
         height: 350px;
+    }
+
+    .subscribe-container {
+        height: 250px;
     }
 
     header {
@@ -1054,5 +1068,44 @@ header {
         z-index: 4;
         border-bottom: 2px solid #1085c0;
     }
-    
+
+    /* top bar */
+
+    .top-bar {
+        margin-bottom: 0;
+    }
+
+    /* Search   */
+
+    .search {
+        grid-template-rows: 20px 30px 20px;
+    }
+
+    .search-text-grid {
+        min-width: 33%;
+        grid-area: 1/2/2/3;
+        text-align: center;
+        position: relative;
+    }
+
+
+}
+
+/* Landscape  for phon */
+@media only screen and (min-device-width: 200px) and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    /* contact */
+    #contact-div,
+    #subscribe-div {
+        width: 60%;
+        top: 2%;
+        left: 20%;
+    }
+
+    .contact-container,
+    .subscribe-container {
+        width: 100%;
+        height: 250px;
+    }
+
 }
