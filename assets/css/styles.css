@@ -565,13 +565,6 @@ header {
     color: black;
 }
 
-/* .email-confirmation span,
-.subscribe-confirmation span {
-    margin-right: 8px;
-    color: #e21515;
-
-} */
-
 .close-contact,
 .close-subscribe {
     position: absolute;
@@ -606,15 +599,15 @@ header {
 }
 
 .footer-content {
-    padding: 30px 10px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 40px);
     justify-items: center;
     font-size: 12px;
-    color: rgb(138, 136, 136);
+    color: #000000b3;
     background-color: #D4EFFC;
+    padding: 0;
 }
 
 .logo {
@@ -858,8 +851,8 @@ header {
 
     .recipe-card {
         height: 450px;
-        border-top: 2px dashed #1085c0;
-        border-bottom: 2px dashed #1085c0;
+        border-top: 2px solid #1085c0;
+        border-bottom: 2px solid #1085c0;
     }
 
     .recipe-card h5 {
@@ -912,14 +905,14 @@ header {
         position: absolute;
         right: 0;
         top: 0;
-        height: 302px;
+        height: 100%;
         width: 50%;
         border-top: 2px solid;
     }
 
     .footer-img  img {
         width: 100%;
-        height: 100%;
+        height: 238px;
     }
 
     .footer-content {
@@ -927,6 +920,7 @@ header {
         top: 0;
         left: 0;
         width: 50%;
+        padding: 0;
     }
 }
 
@@ -1047,8 +1041,8 @@ header {
         width: 80%;
         height: 300px;
         margin: 15px 10%;
-        border-left: 2px dashed #1085c0;
-        border-right: 2px dashed #1085c0;
+        border-left: 2px solid #1085c0;
+        border-right: 2px solid #1085c0;
     }
 
     .description {
