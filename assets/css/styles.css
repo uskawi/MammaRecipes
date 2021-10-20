@@ -57,7 +57,6 @@ header {
     top: 0;
     z-index: 4;
     background-color:  #fff;
-    /* background-color:#fca253; */
 }
 
 /* second-belt */
@@ -72,20 +71,19 @@ header {
 .brand {
     float: left;
     height: 30px;
-    font-weight: 600;
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 20px;
     letter-spacing: 1px;
 }
 
 .brand a {
     margin-left: 20px;
     text-decoration: none;
-    color: #5B98B7;
+    color: #007C89;
 }
 
 .brand a i {
-    color: rgb(143, 219, 67);
+    color: #1beb08;
     font-size: 120%;
 }
 
@@ -94,7 +92,7 @@ header {
 .subscribe {
     float: right;
     height: 100%;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 #subscribe-button {
@@ -116,8 +114,6 @@ header {
     grid-template-columns: repeat(3, auto);
     grid-template-rows: 30px 40px 10px;
     border-bottom: 2px solid rgb(143, 219, 67);
-    /* background-color: rgb(143, 219, 67); */
-    /* background-color:#fca253; */
 }
 
 .search-text-grid {
@@ -131,7 +127,7 @@ header {
     width: 100%;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: rgb(138, 136, 136);
     font-weight: 700;
 }
 
@@ -186,7 +182,8 @@ header {
     display: grid;
     grid-template-columns: 10% 40% 40% 10%;
     grid-template-rows: 80px repeat(6, 100px) 20px;
-    color: rgb(36, 35, 35);
+    color: #000000b3;
+    font-size: 19px;
     font-size: 18px;
     font-family: 'Source Code Pro', monospace;
     background-color: #D4EFFC;
@@ -242,6 +239,10 @@ header {
     left: 140px;
 }
 
+/* .search-text p {
+    font-weight: 500;
+} */
+
 .suggestion-icon {
     position: absolute;
     left: 40px;
@@ -259,7 +260,8 @@ header {
 }
 
 .number-recipes h1 {
-    font-size: 24px;
+    height: 100%;
+    font-size: 30px;
 
 }
 
@@ -280,6 +282,8 @@ header {
     grid-template-rows: 400px 320px;
     margin-bottom: 30px;
     background-color: #D4EFFC;
+    color: #000000b3;
+    font-size: 19px;
 
 }
 
@@ -315,13 +319,12 @@ header {
     width: 100%;
     max-height: 400px;
     border: 2px dashed #5B98B7;
-    color: rgb(138, 136, 136);
     grid-area: 2/2/3/5;
 }
 
 .allergens-recipes h3{
     font-family: 'Source Code Pro', monospace;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     text-align: center;
     margin: 5% 15px;
@@ -535,7 +538,7 @@ header {
 
 .email-confirmation,
 .subscribe-confirmation {
-    border: 2px solid rgb(143, 219, 67);
+    border: 2px solid rgb(27, 29, 25);
     width: 60%;
     height: 50px;
     text-align: center;
@@ -545,6 +548,9 @@ header {
     top: 10%;
     left: 20%;
     background-color: #ffff;
+}
+
+.subscribe-confirmation {
     line-height: 50px;
 }
 
@@ -556,7 +562,7 @@ header {
     color: #000;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(143, 219, 67);
+    color: black;
 }
 
 /* .email-confirmation span,
@@ -771,7 +777,7 @@ header {
 }
 
 @media(min-width:575px) {
-
+   
 
     /* top bar */
 
@@ -833,7 +839,6 @@ header {
 
     .suggestion-text {
         left: 130px;
-        font-size: 14px;
     }
 
     .number-recipes h1 span {

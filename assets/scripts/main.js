@@ -9,6 +9,14 @@ let subscribe = document.getElementById('subscribe-div');
 let contact = document.getElementById('contact');
 let closeContactForm = document.getElementById('closeContact');
 let contactDiv = document.getElementById('contact-div');
+let subscriberName = document.getElementById('subscriberName');
+let subscriberEmail =  document.getElementById('subscriberEmail');
+let contactName =  document.getElementById('name');
+let senderName=  document.getElementById('emailAddress');
+let contactMessage =  document.getElementById('message');
+let contactUserMessage = document.getElementById('contactUserMessage');
+let  subscribetUserMessage = document.getElementById('subscribetUserMessage');
+
 
 
 // added hover effect to search bar
@@ -37,6 +45,13 @@ searchInput.addEventListener("mouseout", function () {
     styleBackInput(searchInput);
 });
 
+
+// function hoverIcon(elm){
+//     for (let i = 0; i < suggestionIcon.length; i++){
+//     elm[i].classList.remove('suggestion-before');
+//     elm[i].classList.add('suggestion-after');
+//     }
+// }
 
 for (let i = 0; i < suggestionIcon.length; i++) {
     icon[i].addEventListener('mouseenter', function () {
@@ -72,12 +87,17 @@ contact.addEventListener('click', function () {
 });
 
 closeContactForm.addEventListener('click', function () {
+    contactUserMessage.innerHTML = "";
+    contactName.value ="";
+    contactMessage.value = "";
+    senderName.value = "";
     contactDiv.classList.add('hide');
 });
 
 
 for (let i = 0; i < openSubscribe.length; i++) {
     openSubscribe[i].addEventListener('click', function () {
+        subscribetUserMessage.innerHTML = "";
         if(contactDiv.classList.contains('hide')){
         subscribe.classList.remove('hide');
         }else{
@@ -87,5 +107,8 @@ for (let i = 0; i < openSubscribe.length; i++) {
 }
 
 closeSubscribe.addEventListener('click', function () {
+    subscribetUserMessage.innerHTML = "";
+    subscriberName.value = "";
+    subscriberEmail.value = "";
     subscribe.classList.add('hide');
 });

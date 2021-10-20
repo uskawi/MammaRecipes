@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
-let contactUserMessage = document.getElementById('contactUserMessage');
-let  subscribetUserMessage = document.getElementById('subscribetUserMessage');
+// let contactUserMessage = document.getElementById('contactUserMessage');
+// let  subscribetUserMessage = document.getElementById('subscribetUserMessage');
 
 function sendMail(subscribeForm) {
     emailjs.send("usksidi","template_bzv8md3",{
