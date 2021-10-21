@@ -1,108 +1,305 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# MammaRecipes 
 
-Welcome USER_NAME,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The link to the live project. (https://uskawi.github.io/MammaRecipes/)<br>
+MammaRecipes is an online recipe search engine where users can search for more than 40 000 recipes from the Edamam recipes search database.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+[Image showing the website displayed Desktop](assets/images/ReadmeImages/desctop.jpg)<br>
+[Image showing the website displayed phon](assets/images/ReadmeImages/phon.png)<br>
+[Image showing the website displayed tablet](assets/images/ReadmeImages/tablet.png)<br>
 
-## Gitpod Reminders
+## Contents 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- [User Experience (UX)](#user-experience-ux)
+   * [Strategy](#strategy)
+   * [User Stories](#user-stories) 
+   * [Scope](#scope)
+      + [Current Features](#current-features)
+      + [Features to implement in the future](#features-to-implement-in-the-future)
+   * [Structure](#structure)
+   * [Skeleton](#skeleton)
+   * [Surface](#surface)
+     + [Colour Scheme](#colour-scheme)
+     + [Typography](#typography)
+     + [Imagery](#imagery)
 
-`python3 -m http.server`
+- [Technologies](#technologies)
+   * [Languages used](#languages-used)
+   * [Frameworks, Libraries & Programs Used](#frameworks-libraries-&-programs-used)
 
-A blue button should appear to click: _Make Public_,
+- [Testing](#testing)
+   
+- [Deployment](#deployment)
 
-Another blue button should appear to click: _Open Browser_.
+- [Credits](#credits)
+   * [Code](#code)
+   * [Content](#content)
+   * [Media](#media)
+   * [Acknowledgements](#acknowledgements)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+## User Experience (UX)
 
-Another blue button should appear to click: _Open Browser_.
+   ### Strategy 
+   #### User goals 
+   - As a user, I want to easily find a recipe that suits my culinary needs.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+   #### Website owner goals:
+   1. Accessibility to visitors.
+   2. Drive traffic, engage prospects, generate leads, and re-engage existing users.
+   3. Build a media presence to generate a passive income through ads and other sales in the future.
+   5.  My learning objective is to learn vanilla Javascript and complete this project without using third-party libraries.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+   ### User Stories
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+   - #### First Time Visitor 
+        As a user who is for the first time redirected by a search engine to EdamamRecipes, I would more likely know the website's purpose. The most important  for me would be:
 
-------
+        1. To intuitively use the site.
+        2. Accessibility.
+        3. Responsiveness.
+        4. Quick and easy way to find recipes.
 
-## Release History
+   - #### Frequent user Goals
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+          As a frequent user:
+          1. I want to be able to contact the owner.
+          2. I want to be able to subscribe to get all new features.
+          3. I want to see as much information as possible about recipes and the people who created them.
+   ### User stories
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+1. User Story 1
+I can visit the website and browse content. No log-in is required.
+2. User Story 2
+I can visit the website and search for vegetarian and vegan recipes.
+3. User Story 3
+I can contact the owner ot the website.
+4. User Story 4
+I got a message that the email was sent successfully.
+5. User Story 5
+I can subscribe.
+6. User Story 6
+I get a message that I bein subscribe.
+7. User Story 7
+When I'm browsing website content, I don't need to scroll up au again to the top to start a new search because the search bar is visible all time.
+8. User Story 8
+I can see the source of the recipes.
+9. User Story 9
+I can filter through the recipes based on some keywords.
+10. User Story 10
+I can see the total number of recipes found for my search.
+11. User Story 11
+I can see dish type or cuisine type.
+12. User Story 12
+I can use the website on different devices.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+   ### Scope
+   #### Current features 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+   - Easy and straightforward to navigate.
+   - Responsive on all device sizes.
+   - Interactive elements. 
+   - Images of dishes from different parts of the world on one page.
+   - Search for recipes based on API.
+   - Sticky search bar on top of the page to prevent the user from scrolling up to the top of the page to start a new search. 
+   - Possibility to subscribe.
+   - Social Links. 
+   -  Possibility to contact the owner.
+   - Search for recipes based on API.
+   - Search suggestion icons that indicate the possible key used by search engines and display search results when clicked to make users' experience more straightforward.
+   - footer with image and social media links.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+ #### Features to implement in the future
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+   - Add a Comments section where visitors can add comments and give feedback to help improve user experience and get ideas for a new feature.
+   -Add Google AdSense to the website once the traffic increases to generate income.
+   - Add a section of different counties that would allow visitors t culinary traditions and customs from different countries
+   -Add video content where visitors can watch the preparation of different dishes.
+   - Add a possibility to upgrade to premium to receive diet plans.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+   ### Structure
+    The website contains one page serving as a landing page and displaying search results, contacting the owner of the page, and making a subscription.
+   1. Top Bar
+   [Image showing the top bar](assets/images/contentImages/topbar.jpg)<br>
+      - Topbar contains a logo, subscribe button to open the subscribe form, and search bar.<br>
+      - Topbar contains a logo, subscribe button to open the subscribe form, and search bar.
+         The topbar always stays on the top of the page when the user is scrolling down or up to improve the user experience by facilitating a new search without scrolling back to the top.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+  2. Search Suggetions
+      [Image showing search-suggestion](assets/images/ReadmeImages/search-suggestions.jpg)<br> 
+      - Search suggestions comprises a header and six different divs, which contain icons and a search keyword.
+      - The icons are clickable, and each icon return specified search results vegetarian, desserts depending on the icon the user clicked.
+      - The layout of the content of the search suggestion section change depending on the screen width.
+   3. Recipes Highlight.
+    [Image showing Recipes Highlight](assets/images/ReadmeImages/recipes-highlight.jpg)<br>
+      - recipes highlight section contains an image and search keys often used by users searching for recipes.
+      - The layout of the content of the search suggestion section change depending on the screen width.
+   4. Results-heder
+      - results header by default, it's hidden, appears after r search to shows the number of recipes found for given search key.
+   5. Recipes template
+    [Image showing Recipes-template](assets/images/ReadmeImages/templates.jpg)<br>
+      - Recipes-template by default, it's hidden, appears after search to shows the cars containing information about recipes found for given search key.
+   6. Subscribe form
+    [Image showing subscribe form](assets/images/contentImages/topbar.jpg)<br>
+      - Subscribe form by default, hidden, appears after clicking on the subscribe button or subscribe in the footer.
+   7. Contact Form
+    [Image showing contact form](assets/images/ReadmeImages/subscribe.jpg)<br>
+      - Contact form  by default, hidden, appears after clicking on the subscribe button or subscribe in the footer.
+   8. Footer
+    [Image showing the Footer](assets/images/ReadmeImages/footer-readme.jpg)<br>
+   - Footer is composed of an image and part that holds all the content: social media links, contact, subscribe, CopyRights.
+   - The Footer image is visible only in large and medium devices.
+  ### Skeleton 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+   - Wireframes were created on Balsamiq.
+   - Changes from the wireframes to the final site are significant. 
+   - The planned layout was changed by removing the navbar because it wouldn't add any value as the website is composed of one HTML page only.
+   - Image was added to the footer as the footer had too much empty real Estate.
+ ### Surface
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+ -   #### Colour Scheme
+        
+       Colors with a low contrast ratio were used to make the website look simple. Images used in the website contain colors matching the ones used in CSS.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+-   #### Typography
+         
+     Fonts used for this website were imported from  [Google Fonts](https://fonts.google.com/) and also used fonts from the Gitpode default fonts.
+     Font imported from Google Fonts: Lato, Roboto, and Source  Code Pro.
+     Arial, Helvetica, and Titillium Web from the default fonts.tica and Titillium Web from the the default fonts.
+      
+-   #### Imagery
+      
+       Images were chosen to much the colors used in the website to make the website look simple.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Technologies 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Languages Used
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+-   [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+-   [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-------
+### Frameworks, and Platforms
 
-## FAQ about the uptime script
+1. [Balsamiq](https://balsamiq.com/)  
+- Used to Create wireframe.
+2. [Gitpod](https://www.gitpod.io/)
+- Used as a text editor.
+3. [Chrome devtools](https://developer.chrome.com/docs/devtools/)
+- Used as a browser.
+4. [Google Fonts](https://fonts.google.com/)
+- Used to import fonts.
+5. [Font Awesome](https://fontawesome.com/)
+- Used for icons.
+6. [GitHub](https://github.com/)
+- Used for icons.
+8. [Pexel](https://www.pexels.com/)
+- Used as a source for images.
+8. [TinyJPG](https://tinyjpg.com/)
+- used to compress images
+9. [Emailjs](https://www.emailjs.com/)
+- Used to send emails  and make subscription
+10. [Git Pages](https://pages.github.com/)
+- Used to deploy the website.
+11. [Edamam](https://developer.edamam.com/)
+-  Used as recipes database.
 
-**Why have you added this script?**
+## Testing
+### Code Validation
+1. HTML 
+  - [HTML validation image](assets/images/ReadmeImages/html-validation.jpg)<br>
+  - All pages passed the W3C HTML Validation tests with 0 errors, and can be viewed here
+  -  Warnings:
+     1. - The type attribute is unnecessary for JavaScript resources.  
+2. CSS
+  - [CSS validation image](assets/images/ReadmeImages/css-validation.jpg)<br>
+  - The CSS on the website passed the W3C CSS Jigsaw validation.
+  - warnings:
+    1. Imported style sheets are not checked in direct input and file upload modes
+    2. -webkit-min-device-pixel-ratio is a vendor extension
+3. Java Script
+   - [EdamamAPI.js validation image](assets/images/ReadmeImages/edamam-jshint.jpg)<br>
+   - [email.js validation image](assets/images/ReadmeImages/email.js-jhnit.jpg)<br>
+   - [main.js validation image](assets/images/ReadmeImages/email.js-jhnit.jpg)<br>
+   - The JavaScript on the website was validated with JSHint. No errors found.
+   - Warnings
+      1.  available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). <br>
+       this warning was fixed by adding  **/*jshint esversion: 6 */** as comment on the top of each Java script page.
+    	2. Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (suggestionIcon, i)	Functions declared within  loops referencing an outer scoped variable may lead to confusing semantics. (suggestionIcon, i)
+      3.	Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (subscribetUserMessage, contactDiv, subscribe)     
+4. Lighthouse test
+      - [lighthouse test results image](assets/images/ReadmeImages/lightHouse.jpg)<br>
+### Browser Testing
+ - The website has been tested on Chrome, Vivaldi, Opera, Microsoft Edge, Firefox, and Internet Explorer. No problems were found on any of them exclude Explorer. The issue was to be a lack of support on the Internet Explorer for the CSS grid. The image below represents. 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Bugs
+   Bug caused  the email.js   not to  send subscribe email to inform about new subscribers. bug caused  by function  called twice for both sending contact email and subscribing.
+   fixed the bug by changing subscribe function name.
 
-**How will this affect me?**
+## Deployment
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### GitHub Pages
+To deploy a page in Github Pages falow the steps below:
+1. Access your GitHub account and find the relevant repository.
+2. Click 'Settings' in the repository.
+3. In Settings, click 'Pages' in the left-hand menu.
+4. Click 'Source'.
+5. In the dropdown menu displaying 'None', select 'Master Branch' or 'Main'6.
+6. Allow the page some time to deploy your website.
+7. At the top of Github Pages you will see a link to your live website.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Making a Local Clone
+To clone this  respiratory falow the steps below:
+1. In the File menu, click Clone Repository.
+2. Click the tab that corresponds to the location of the repository you want to clone. You can also click URL to manually enter the repository location.
+3. Choose the repository you want to clone from the list.
+4. Click Choose... and navigate to a local path where you want to clone the repository.
+5. Click Clone.
+6. If you plan to use this fork for contributing to the original upstream repository, click To contribute to the parent project.
+8. If you plan to use this fork for a project not connected to the upstream, click For my own purposes.
+8. Click Continue.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Forking a repository
+ To fork this  respiratory falow the steps below:
+1. Access your GitHub account and find the relevant repository.
+2. Click on 'Fork' on the top right of the page.
+3. You will find a copy of the repository in your own Github account. 
+### Edamam API 
+The way to creat Edamam API:
+1.  Navigate to https://developer.edamam.com/ and create a Edamamaccount.
+2. Go to application  and creat New  Application and add application name.
+3. Create a credential (API-key) and (APP-KEY) for the project.
 
-**So….?**
+4. G to https://developer.edamam.com/edamam-docs-recipe-api-v1?cms=published&cms_token=  copy URL and Read the documentations.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+5. Past The  URl, APP_KEY, APP_KEY to the function that call the Esamam API inside your project.
 
-**Can I opt out?**
+### Email.js
+1. Creat an email.js  acount and login.
+2. Open Email Services (opens new window)page in EmailJS dashboard
+Choose from the list of supported services and click on the service
+Fill out the service details
+Test the email service and make sure you receive the test email
+3. Creat Email Templete
+5. You can start to use email.js inside your project.
+  
+## Credits
+### Code
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+Function used in email.js file is cretided to code-institute.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Media
 
-**Anything more?**
+ - [Tajin image by Naim Benjelloun ](https://www.pexels.com/photo/vegetable-dish-in-ceramic-cooking-pot-2291596/) Recipes Highlight image.
+ - [bowl-of-noodles-with-sunny-side image by Cats Comings](https://www.pexels.com/photo/bowl-of-noodles-with-sunny-side-up-egg-1359310/): footer image.
+ 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Acknowledgements
 
----
+-   Code institute.
+-   Student Support.
+-   My mentor  Caleb Mbakwe. 
+-   The slack community.
 
-Happy coding!
