@@ -281,10 +281,10 @@ header {
     grid-template-columns: 5% 55% 5% 30% 5%;
     grid-template-rows: 400px 320px;
     margin-bottom: 30px;
+    margin-top: 50px;
     background-color: #D4EFFC;
     color: #000000b3;
     font-size: 19px;
-
 }
 
 .recipes-highlight-photo {
@@ -292,8 +292,6 @@ header {
     width: 100%;
     grid-area: 1/1/2/6;
     position: relative;
-    z-index: 1;
-    opacity: .8;
 }
 
 .recipes-highlight h2 {
@@ -349,7 +347,6 @@ header {
     margin-top: 10px;
     width: 80%;
     padding-left: 5%;
-    cursor: pointer;
 }
 
 .allergens li i {
@@ -402,8 +399,8 @@ header {
 }
 
 .recipe-card img {
-    width: 100%;
     height: 250px;
+    width: 100%;
 }
 
 
@@ -847,9 +844,8 @@ header {
     }
 
     .recipe-card {
-        height: 450px;
-        border-top: 2px dashed #1085c0;
-        border-bottom: 2px dashed #1085c0;
+        border-top: 2px solid #1085c0;
+        border-bottom: 2px solid #1085c0;
     }
 
     .recipe-card h5 {
@@ -1042,16 +1038,15 @@ header {
     .recipe-card {
         cursor: pointer;
         opacity: 0.8;
-        height: 500px;
     }
 
 
     .recipe-card img {
-        width: 80%;
-        height: 300px;
+        width: 75%;
+        /* height: 300px; */
         margin: 15px 10%;
-        border-left: 2px dashed #1085c0;
-        border-right: 2px dashed #1085c0;
+        border-left: 2px solid #1085c0;
+        border-right: 2px solid #1085c0;
     }
 
     .description {

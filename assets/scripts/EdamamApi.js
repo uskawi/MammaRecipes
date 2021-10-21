@@ -3,6 +3,7 @@ const baseURL = "https://api.edamam.com/search?q=";
 let API_KEY = "0213c17af1509fc4e8579eb9eb4536ad";
 let API_APP = "bbdefe32";
 let searchForm = document.getElementById("searchForm");
+var data
 
 
 searchForm.addEventListener('submit', function (event) {
@@ -27,12 +28,9 @@ function getData(type, cb) {
 function writeToDocument(type) {
     let resultsCount = document.getElementById("resultsCount");
     let el = document.getElementById("data");
-    let top = document.getElementById('top');
-    let displayrecipes = document.getElementById('displayrecipes');
     el.innerHTML = "";
     resultsCount.innerHTML = "";
     getData(type, function (data) {      
-        top.style.display = "none";
         data = data.hits;
         resultsCount.innerHTML = `<h3> ${data.length} Recipes for ${type}</h3>`;
         for (let item = 0; item < data.length; item++) {
@@ -53,5 +51,3 @@ function writeToDocument(type) {
     });
 
 }
-
-

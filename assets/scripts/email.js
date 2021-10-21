@@ -12,16 +12,16 @@ function sendSubscribeMail(subscribeForm) {
         subscribetUserMessage.innerHTML = `
             <div class="subscribe-confirmation">
               <p>Thank you for subscribing.</p>
-            </div>;
-        `;
+            </div>
+        `
     },
     function(error) {
         console.log("FAILED", error);
         subscribetUserMessage.innerHTML = `
              <div classe="subscribe-confirmation">
                <p><span>OPPs!!!</span>Something Went Wrong Please Try Again.</p>
-             </div>;
-        `;
+             </div>
+        `
     }
 );
 return false; 

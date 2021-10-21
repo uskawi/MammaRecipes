@@ -45,13 +45,7 @@ searchInput.addEventListener("mouseout", function () {
     styleBackInput(searchInput);
 });
 
-
-// function hoverIcon(elm){
-//     for (let i = 0; i < suggestionIcon.length; i++){
-//     elm[i].classList.remove('suggestion-before');
-//     elm[i].classList.add('suggestion-after');
-//     }
-// }
+// added hover effect to search-suggestionIcons
 
 for (let i = 0; i < suggestionIcon.length; i++) {
     icon[i].addEventListener('mouseenter', function () {
@@ -59,6 +53,8 @@ for (let i = 0; i < suggestionIcon.length; i++) {
         suggestionIcon[i].classList.add('suggestion-after');
     });
 }
+
+// added hover effect to subscribe Button
 
 for (let i = 0; i < suggestionIcon.length; i++) {
     icon[i].addEventListener('mouseout', function () {
@@ -77,6 +73,7 @@ subscribeButton.addEventListener('mouseout', function () {
     subscribeButton.classList.add('subscribe-button-before');
 });
 
+// removed class hide from the contact form to appear on the screen  
 
 contact.addEventListener('click', function () {
     if (subscribe.classList.contains('hide')) {
@@ -86,6 +83,8 @@ contact.addEventListener('click', function () {
     }
 });
 
+// added  class hide to the contact form to make it go  back to default style(hidden)
+
 closeContactForm.addEventListener('click', function () {
     contactUserMessage.innerHTML = "";
     contactName.value ="";
@@ -94,7 +93,7 @@ closeContactForm.addEventListener('click', function () {
     contactDiv.classList.add('hide');
 });
 
-
+// removed class hide from the subscribe form to make it appear on the screen  
 for (let i = 0; i < openSubscribe.length; i++) {
     openSubscribe[i].addEventListener('click', function () {
         subscribetUserMessage.innerHTML = "";
@@ -105,6 +104,8 @@ for (let i = 0; i < openSubscribe.length; i++) {
         }
     });
 }
+
+// added  class hide to the subscribe form to make it go  back to default style(hidden)
 
 closeSubscribe.addEventListener('click', function () {
     subscribetUserMessage.innerHTML = "";
