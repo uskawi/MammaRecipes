@@ -120,7 +120,7 @@ I can use the website on different devices.
    - Add a possibility to upgrade to premium to receive diet plans.
 
    ### Structure
-    The website contains one page serving as a landing page and displaying search results, contacting the owner of the page, and making a subscription.
+   - The website contains one page serving as a landing page and displaying search results, contacting the owner of the page, and making a subscription.
    1. Top Bar
    [Image showing the top bar](assets/images/contentImages/topbar.jpg)<br>
       - Topbar contains a logo, subscribe button to open the subscribe form, and search bar.<br>
@@ -129,10 +129,9 @@ I can use the website on different devices.
 
   2. Search Suggetions
       [Image showing search-suggestion](assets/images/ReadmeImages/search-suggestions.jpg)<br> 
-      - Search suggestions comprises a header and six different divs, which contain icons and a search keyword.
-      - The icons are clickable, and each icon return specified search results vegetarian, desserts depending on the icon the user clicked.
-      - The layout of the content of the search suggestion section change depending on the screen width.
-   3. Recipes Highlight.
+      Topbar contains a logo, subscribe button to open the subscribe form, and search bar.<br>
+      - Topbar contains a logo, subscribe button to open the subscribe form, and search bar.
+         The topbar always stays on the top of the page when the user is scrolling down or up to improve the user experience by facilitating a new search without scrolling back to the top.
     [Image showing Recipes Highlight](assets/images/ReadmeImages/recipes-highlight.jpg)<br>
       - recipes highlight section contains an image and search keys often used by users searching for recipes.
       - The layout of the content of the search suggestion section change depending on the screen width.
@@ -146,7 +145,7 @@ I can use the website on different devices.
       - Subscribe form by default, hidden, appears after clicking on the subscribe button or subscribe in the footer.
    7. Contact Form
     [Image showing contact form](assets/images/ReadmeImages/subscribe.jpg)<br>
-      - Contact form  by default, hidden, appears after clicking on the subscribe button or subscribe in the footer.
+      - Contact form,  by default, hidden, appears after clicking on the subscribe button or subscribe in the footer.
    8. Footer
     [Image showing the Footer](assets/images/ReadmeImages/footer-readme.jpg)<br>
    - Footer is composed of an image and part that holds all the content: social media links, contact, subscribe, CopyRights.
@@ -156,7 +155,7 @@ I can use the website on different devices.
    - Wireframes were created on Balsamiq.
    - Changes from the wireframes to the final site are significant. 
    - The planned layout was changed by removing the navbar because it wouldn't add any value as the website is composed of one HTML page only.
-   - Image was added to the footer as the footer had too much empty real Estate.
+   - Image was added to the footer as the footer had too much empty real  estate.
  ### Surface
 
  -   #### Colour Scheme
@@ -167,7 +166,7 @@ I can use the website on different devices.
          
      Fonts used for this website were imported from  [Google Fonts](https://fonts.google.com/) and also used fonts from the Gitpode default fonts.
      Font imported from Google Fonts: Lato, Roboto, and Source  Code Pro.
-     Arial, Helvetica, and Titillium Web from the default fonts.tica and Titillium Web from the the default fonts.
+     Arial, Helvetica, and Titillium Web from the default fonts.
       
 -   #### Imagery
       
@@ -210,7 +209,7 @@ I can use the website on different devices.
 ### Code Validation
 1. HTML 
   - [HTML validation image](assets/images/ReadmeImages/html-validation.jpg)<br>
-  - All pages passed the W3C HTML Validation tests with 0 errors, and can be viewed here
+  - All pages passed the W3C HTML Validation tests.
   -  Warnings:
      1. - The type attribute is unnecessary for JavaScript resources.  
 2. CSS
@@ -232,11 +231,11 @@ I can use the website on different devices.
 4. Lighthouse test
       - [lighthouse test results image](assets/images/ReadmeImages/lightHouse.jpg)<br>
 ### Browser Testing
- - The website has been tested on Chrome, Vivaldi, Opera, Microsoft Edge, Firefox, and Internet Explorer. No problems were found on any of them exclude Explorer. The issue was to be a lack of support on the Internet Explorer for the CSS grid. The image below represents. 
+ - The website has been tested on Chrome, Vivaldi, Opera, Microsoft Edge, Firefox, and Internet Explorer. No problems were found on any of them exclude Explorer. The issue was to be a lack of support on the Internet Explorer for the CSS grid.  
 
 ### Bugs
-   Bug caused  the email.js   not to  send subscribe email to inform about new subscribers. bug caused  by function  called twice for both sending contact email and subscribing.
-   fixed the bug by changing subscribe function name.
+   The bug caused the email.js   not to send subscribe emails to inform about new subscribers. The bug caused by the same function was called twice for both sending contact email and subscribe.
+   Fixed the bug by changing subscribe function name. 
 
 ## Deployment
 
@@ -287,8 +286,8 @@ Test the email service and make sure you receive the test email
   
 ## Credits
 ### Code
-
-Function used in email.js file is cretided to code-institute.
+1.  The function used in email.js file is credited to code-institute.
+2. Function Write to document used in EdamamAPI.js file is credited to code-institute.
 
 ### Media
 

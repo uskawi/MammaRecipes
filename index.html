@@ -13,7 +13,6 @@
     <!--Link to Css-->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-
 <body>
     <header>
         <div class="top-bar">
@@ -86,7 +85,7 @@
             <div class=recipes-highlight>
                 <div class="recipes-highlight-photo">
                     <h2>Life’s Too Short For Boring Food</h2>
-                    <img src="assets/images/main-img.jpg" alt="Tajin">
+                    <img src="assets/images/contentImages/main-img.jpg" alt="Tajin">
                 </div>
                 <div class="allergens-recipes">
                     <h3>Allergy-Freindly Recipes</h3>
@@ -118,7 +117,7 @@
                     <div id="closeSubscribe" class="close-subscribe">
                         <p class="remove">Close</p><i class="far fa-times-circle" aria-hidden="true"></i>
                     </div>
-                    <form onsubmit="return sendMail(this);">
+                    <form onsubmit="return sendSubscribeMail(this);">
                         <input type="text" name="name" class="name-input" id="subscriberName" placeholder="Name"
                             required />
                         <input type="text" name="emailaddress" class="email-input" id="subscriberEmail"
@@ -156,7 +155,7 @@
     <footer>
         <div class="footer-container">
             <div class="footer-img">
-                <img src="assets/images/footer-img.jpg" alt="Egg fried noodles">
+                <img src="assets/images/contentImages/footer-img.jpg" alt="Egg fried noodles">
             </div>
             <div class="footer-content">
                 <div class="logo">
