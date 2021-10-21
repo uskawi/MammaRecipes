@@ -1,8 +1,6 @@
-/*jshint esversion: 6 */
-// let contactUserMessage = document.getElementById('contactUserMessage');
-// let  subscribetUserMessage = document.getElementById('subscribetUserMessage');
 
-function sendMail(subscribeForm) {
+
+function sendSubscribeMail(subscribeForm) {
     emailjs.send("usksidi","template_bzv8md3",{
         from_name: subscribeForm.subscriberName.value,
         user_email: subscribeForm.subscriberEmail.value,
@@ -57,5 +55,3 @@ function sendMail(contactForm) {
     );
     return false; 
 } 
-
-
