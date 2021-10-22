@@ -1,4 +1,4 @@
-
+/*jshint esversion: 6 */
 
 function sendSubscribeMail(subscribeForm) {
     emailjs.send("usksidi","template_bzv8md3",{
@@ -13,7 +13,7 @@ function sendSubscribeMail(subscribeForm) {
             <div class="subscribe-confirmation">
               <p>Thank you for subscribing.</p>
             </div>
-        `
+        `;
     },
     function(error) {
         console.log("FAILED", error);
@@ -21,7 +21,7 @@ function sendSubscribeMail(subscribeForm) {
              <div classe="subscribe-confirmation">
                <p><span>OPPs!!!</span>Something Went Wrong Please Try Again.</p>
              </div>
-        `
+        `;
     }
 );
 return false; 
@@ -41,7 +41,7 @@ function sendMail(contactForm) {
             contactUserMessage.innerHTML = `
                 <div class="email-confirmation">
                   <p>Your message bein send Successfully.</p>
-                </div>;
+                </div>
             `;
         },
         function(error) {
@@ -49,7 +49,7 @@ function sendMail(contactForm) {
             contactUserMessage.innerHTML = `
                  <div classe="email-confirmation">
                    <p><span>OPPs!!!</span>Something Went Wrong Please Try Again.</p>
-                 </div>;
+                 </div>
             `;
         }
     );

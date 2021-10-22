@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="">
+    <meta name="description"
+        content="Discover nutritious recipes and expert tips on everything from special diets to the health benefits of your favourite foods">
     <title>MammaRecipes</title>
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -14,7 +15,9 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+    <!-- header -->
     <header>
+        <!-- topbar -->
         <div class="top-bar">
             <div class="brand">
                 <a href="index.html">MammaRecipes<i class="fas fa-pepper-hot" aria-hidden="true"></i></a>
@@ -23,13 +26,14 @@
                 <button id="subscribe-button" class="subscribe-button-before open-subscribe">Subscribe</button>
             </div>
         </div>
+        <!-- search bar -->
         <div class="search">
             <div class="search-text-grid">
                 <p class="search-text">Search for Recipes by Title by Ingredient</p>
             </div>
             <div class="searchForm-grid">
                 <form id="searchForm">
-                    <input id="searchInput" type="text" name="searchBar">
+                    <input id="searchInput" type="text" name="searchBar" aria-label="Search here">
                 </form>
                 <div class="form-icon">
                     <i class="fas fa-search"></i>
@@ -38,75 +42,82 @@
         </div>
     </header>
     <section id="main">
-            <div class="search-suggestion">
-                <div class="search-suggestion-container">
-                    <div class="number-recipes">
-                        <h1><span>40,000</span>Recipes</h1>
+        <!-- search-suggestion -->
+        <div class="search-suggestion">
+            <div class="search-suggestion-container">
+                <div class="number-recipes">
+                    <h1><span>40,000</span>Recipes</h1>
+                </div>
+                <div class="by-ingredient" onclick="writeToDocument('fish')">
+                    <div class="suggestion-text">
+                        <p>Fish</p>
                     </div>
-                    <div class="by-ingredient" onclick="writeToDocument('fish')">
-                        <div class="suggestion-text">
-                            <p>Fish</p>
-                        </div>
-                        <div class="suggestion-icon suggestion-before"><i class="icon fas fa-fish" aria-hidden="true"></i></div>
-                    </div>
-                    <div class="winter" onclick="writeToDocument('winter')">
-                        <div class="suggestion-text">
-                            <p>Winter</p>
-                        </div>
-                        <div class="suggestion-icon suggestion-before"><i class="icon far fa-snowflake" aria-hidden="true"></i></div>
-                    </div>
-                    <div class="vegetarian" onclick="writeToDocument('vegetarian')">
-                        <div class="suggestion-text">
-                            <p>Vegetarian</p>
-                        </div>
-                        <div class="suggestion-icon suggestion-before"><i class="icon fas fa-carrot" aria-hidden="true"></i></div>
-                    </div>
-                    <div class="deserts" onclick="writeToDocument('deserts')">
-                        <div class="suggestion-text">
-                            <p> Deserts</p>
-                        </div>
-                        <div class="suggestion-icon suggestion-before"><i class="icon fas fa-birthday-cake" aria-hidden="true"></i></div>
-                    </div>
-                    <div class="lunch" onclick="writeToDocument('by-cours')">
-                        <div class="suggestion-text">
-                            <p>By Course</p>
-                        </div>
-                        <div class="suggestion-icon suggestion-before"><i class="icon fas fa-utensils" aria-hidden="true"></i></div>
-                    </div>
-                    <div class="italian" onclick="writeToDocument('cookie')">
-                        <div class="suggestion-text">
-                            <p>Cookie</p>
-                        </div>
-                        <div class="suggestion-icon suggestion-before"><i class="icon fas fa-cookie" aria-hidden="true"></i></div>
+                    <div class="suggestion-icon suggestion-before"><i class="icon fas fa-fish" aria-hidden="true"></i>
                     </div>
                 </div>
-            </div>
-            <div class="results-heder">
-                <div id="resultsCount">
+                <div class="winter" onclick="writeToDocument('winter')">
+                    <div class="suggestion-text">
+                        <p>Winter</p>
+                    </div>
+                    <div class="suggestion-icon suggestion-before"><i class="icon far fa-snowflake"
+                            aria-hidden="true"></i></div>
                 </div>
-            </div>
-            <div id="displayrecipes" class="recipes-template">
-                <div id="data">
+                <div class="vegetarian" onclick="writeToDocument('vegetarian')">
+                    <div class="suggestion-text">
+                        <p>Vegetarian</p>
+                    </div>
+                    <div class="suggestion-icon suggestion-before"><i class="icon fas fa-carrot" aria-hidden="true"></i>
+                    </div>
                 </div>
-            </div>
-            <div class=recipes-highlight>
-                <div class="recipes-highlight-photo">
-                    <h2>Life’s Too Short For Boring Food</h2>
-                    <img src="assets/images/contentImages/footer-img.jpg" alt="Tajin">
+                <div class="deserts" onclick="writeToDocument('deserts')">
+                    <div class="suggestion-text">
+                        <p> Deserts</p>
+                    </div>
+                    <div class="suggestion-icon suggestion-before"><i class="icon fas fa-birthday-cake"
+                            aria-hidden="true"></i></div>
                 </div>
-                <div class="allergens-recipes">
-                    <h3>Allergy-Freindly Recipes</h3>
-                    <hr class="hr-allergens-recipes">
-                    <ul class="allergens">
-                        <li><i class="fas fa-check" aria-hidden="true"></i>Soy Free</li>
-                        <li><i class="fas fa-check" aria-hidden="true"></i>Dairy Free</li>
-                        <li><i class="fas fa-check" aria-hidden="true"></i>Egg Free</li>
-                        <li><i class="fas fa-check" aria-hidden="true"></i>Peanut Free</li>
-                        <li><i class="fas fa-check" aria-hidden="true"></i>Shellfish Free</li>
-                    </ul>
+                <div class="lunch" onclick="writeToDocument('main-course')">
+                    <div class="suggestion-text">
+                        <p>By Course</p>
+                    </div>
+                    <div class="suggestion-icon suggestion-before"><i class="icon fas fa-utensils"
+                            aria-hidden="true"></i></div>
+                </div>
+                <div class="cookies" onclick="writeToDocument('cookie')">
+                    <div class="suggestion-text">
+                        <p>Cookie</p>
+                    </div>
+                    <div class="suggestion-icon suggestion-before"><i class="icon fas fa-cookie" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
         </div>
+        <!--resultsCount -->
+        <div id="resultsCount">
+        </div>
+        <!-- recipes-template -->
+        <div class="recipes-template">
+            <div id="data">
+            </div>
+        </div>
+        <!-- recipes-highlight -->
+        <div class=recipes-highlight>
+            <h2>Life’s Too Short For Boring Food</h2>
+            <img src="assets/images/contentImages/main-img.jpg" alt="Tajin">
+            <div class="allergens-recipes">
+                <h3>Allergy-Freindly Recipes</h3>
+                <hr class="hr-allergens-recipes">
+                <ul class="allergens">
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Soy Free</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Dairy Free</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Egg Free</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Peanut Free</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i>Shellfish Free</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- subscribe form -->
         <div id="subscribe-div" class="hide">
             <div class="subscribe-container">
                 <div class="subscribe-header">
@@ -124,10 +135,12 @@
                         <button type="submit" class="subscribe-submit-btn">Submit</button>
                     </form>
                 </div>
+                <!-- subscribetUserMessage -->
                 <div id="subscribetUserMessage">
                 </div>
             </div>
         </div>
+        <!-- contact form -->
         <div id="contact-div" class="hide">
             <div class="contact-container">
                 <div class="contact-header">
@@ -146,50 +159,48 @@
                         <button type="submit" class="contact-submit-btn">Submit</button>
                     </form>
                 </div>
+                <!-- contactUserMessage -->
                 <div id="contactUserMessage">
                 </div>
             </div>
+        </div>
     </section>
     <footer>
-        <div class="footer-container">
-            <div class="footer-img">
-                <img src="assets/images/contentImages/footer-img.jpg" alt="Egg fried noodles">
+        <div class="footer-content">
+            <div class="logo">
+                <p>
+                    <a class="anchor-tag-footer" href="index.html"><span>Mamma</span>Recipes<i
+                            class="fas fa-pepper-hot"></i></a>
+                </p>
             </div>
-            <div class="footer-content">
-                <div class="logo">
-                    <p>
-                        <a class="anchor-tag-footer" href="index.html"><span>Mamma</span>Recipes<i
-                                class="fas fa-pepper-hot"></i></a>
-                    </p>
-                </div>
-                <div class="footer-subscribe open-subscribe footer-item">
-                    <p class="footer-item">
-                        Subscribe
-                    </p>
-                </div>
-                <div id="contact" class="footer-email">
-                    <p class="footer-item">Contact</p>
-                </div>
-                <div class="social-media-message">
-                    <p class="footer-item">For More Follow Us On Social Media</p>
-                </div>
-                <div class="facebook social-media">
-                    <a href="https://www.facebook.com/" target="_blank" aria-label="facebook" rel="noreferrer"><i class="fab fa-facebook-f footer-item"
-                            aria-hidden="true"></i></a>
-                </div>
-                <div class="instagram social-media">
-                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" rel="noreferrer"><i class="fab fa-instagram footer-item"
-                            aria-hidden="true"></i></a>
-                </div>
-                <div class="youtube social-media">
-                    <a href="https://www.youtube.com " target="_blank" aria-label="youtube" rel="noreferrer"><i class="fab fa-youtube footer-item"
-                            aria-hidden="true"></i></a>
-                </div>
-                <div class="copyright">
-                    <p class="footer-item">2021 MammaRecipes. All Rights Reserved</p>
-                </div>
+            <div class="footer-subscribe open-subscribe footer-item">
+                <p class="footer-item">
+                    Subscribe
+                </p>
+            </div>
+            <div id="contact" class="footer-email">
+                <p class="footer-item">Contact</p>
+            </div>
+            <div class="social-media-message">
+                <p class="footer-item">For More Follow Us On Social Media</p>
+            </div>
+            <div class="facebook social-media">
+                <a href="https://www.facebook.com/" target="_blank" aria-label="facebook" rel="noreferrer"><i
+                        class="fab fa-facebook-f footer-item" aria-hidden="true"></i></a>
+            </div>
+            <div class="instagram social-media">
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" rel="noreferrer"><i
+                        class="fab fa-instagram footer-item" aria-hidden="true"></i></a>
+            </div>
+            <div class="youtube social-media">
+                <a href="https://www.youtube.com " target="_blank" aria-label="youtube" rel="noreferrer"><i
+                        class="fab fa-youtube footer-item" aria-hidden="true"></i></a>
+            </div>
+            <div class="copyright">
+                <p class="footer-item">2021 MammaRecipes. All Rights Reserved</p>
             </div>
         </div>
+        <!-- </div> -->
     </footer>
     <!-- main.js -->
     <script src="assets/scripts/main.js"></script>
@@ -208,5 +219,4 @@
 
 
 </body>
-
 </html>
