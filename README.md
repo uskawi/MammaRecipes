@@ -4,9 +4,11 @@
 The link to the live project. (https://uskawi.github.io/MammaRecipes/)<br>
 MammaRecipes is an online recipe search engine where users can search for more than 40 000 recipes from the Edamam recipes search database.
 
-[Image showing the website displayed Desktop](assets/images/ReadmeImages/desctop.jpg)<br>
-[Image showing the website displayed phon](assets/images/ReadmeImages/phon.png)<br>
-[Image showing the website displayed tablet](assets/images/ReadmeImages/tablet.png)<br>
+<h2 align="center"><img src="assets/images/ReadmeImages/desctop.jpg"></h2>
+
+<h2 align="center"><img src="assets/images/ReadmeImages/phon.png"></h2>
+
+<h2 align="center"><img src="assets/images/ReadmeImages/tablet.png"></h2>
 
 ## Contents 
 
@@ -102,7 +104,7 @@ I can use the website on different devices.
    - Interactive elements. 
    - Images of dishes from different parts of the world on one page.
    - Search for recipes based on API.
-   - Sticky search bar on top of the page to prevent the user from scrolling up to the top of the page to start a new search. 
+   - Sticky search bar on top of the page to prevent the user from scrolling up to the top of the page to start a new    search. 
    - Possibility to subscribe.
    - Social Links. 
    -  Possibility to contact the owner.
@@ -113,7 +115,7 @@ I can use the website on different devices.
 
  #### Features to implement in the future
 
-   - Add a Comments section where visitors can add comments and give feedback to help improve user experience and get ideas for a new feature.
+   - Add a Comments section where visitors can add comments and give feedback to help improve user experience and get  ideas for a new feature.
    -Add Google AdSense to the website once the traffic increases to generate income.
    - Add a section of different counties that would allow visitors t culinary traditions and customs from different countries
    -Add video content where visitors can watch the preparation of different dishes.
@@ -122,40 +124,48 @@ I can use the website on different devices.
    ### Structure
    - The website contains one page serving as a landing page and displaying search results, contacting the owner of the page, and making a subscription.
    1. Top Bar
-   [Image showing the top bar](assets/images/contentImages/topbar.jpg)<br>
+        <br>
+        <h2 align="center"><img src="assets/images/ReadmeImages/topbar.jpg"></h2>
+        <br> 
       - Topbar contains a logo, subscribe button to open the subscribe form, and search bar.<br>
       - Topbar contains a logo, subscribe button to open the subscribe form, and search bar.
          The topbar always stays on the top of the page when the user is scrolling down or up to improve the user experience by facilitating a new search without scrolling back to the top.
 
-  2. Search Suggetions
-      [Image showing search-suggestion](assets/images/ReadmeImages/search-suggestions.jpg)<br> 
-      Topbar contains a logo, subscribe button to open the subscribe form, and search bar.<br>
-      - Topbar contains a logo, subscribe button to open the subscribe form, and search bar.
-         The topbar always stays on the top of the page when the user is scrolling down or up to improve the user experience by facilitating a new search without scrolling back to the top.
-    [Image showing Recipes Highlight](assets/images/ReadmeImages/recipes-highlight.jpg)<br>
+   2. Search Suggetions
+    
+      <h2 align="center"><img src="assets/images/ReadmeImages/search-suggestions.jpg"></h2>
+ 
+   3. recipes highlight
+ 
+   <h2 align="center"><img src="assets/images/ReadmeImages/recipes-highlight.jpg"></h2>
+
       - recipes highlight section contains an image and search keys often used by users searching for recipes.
       - The layout of the content of the search suggestion section change depending on the screen width.
    4. Results-heder
       - results header by default, it's hidden, appears after r search to shows the number of recipes found for given search key.
    5. Recipes template
-    [Image showing Recipes-template](assets/images/ReadmeImages/templates.jpg)<br>
+
+   <h2 align="center"><img src="assets/images/ReadmeImages/templates.jpg"></h2>
+
       - Recipes-template by default, it's hidden, appears after search to shows the cars containing information about recipes found for given search key.
    6. Subscribe form
-    [Image showing subscribe form](assets/images/contentImages/topbar.jpg)<br>
+>
+   <h2 align="center"><img src="assets/images/ReadmeImages/subscribe.jpg"></h2>
+
       - Subscribe form by default, hidden, appears after clicking on the subscribe button or subscribe in the footer.
    7. Contact Form
-    [Image showing contact form](assets/images/ReadmeImages/subscribe.jpg)<br>
       - Contact form,  by default, hidden, appears after clicking on the subscribe button or subscribe in the footer.
    8. Footer
-    [Image showing the Footer](assets/images/ReadmeImages/footer-readme.jpg)<br>
    - Footer is composed of an image and part that holds all the content: social media links, contact, subscribe, CopyRights.
    - The Footer image is visible only in large and medium devices.
+
   ### Skeleton 
 
    - Wireframes were created on Balsamiq.
    - Changes from the wireframes to the final site are significant. 
    - The planned layout was changed by removing the navbar because it wouldn't add any value as the website is composed of one HTML page only.
    - Image was added to the footer as the footer had too much empty real  estate.
+
  ### Surface
 
  -   #### Colour Scheme
@@ -207,21 +217,35 @@ I can use the website on different devices.
 
 ## Testing
 ### Code Validation
-1. HTML 
-  - [HTML validation image](assets/images/ReadmeImages/html-validation.jpg)<br>
+#### HTML 
+
+ <h2 align="center"><img src="assets/images/ReadmeImages/html-validation.jpg"></h2>
+
   - All pages passed the W3C HTML Validation tests.
-  -  Warnings:
-     1. - The type attribute is unnecessary for JavaScript resources.  
-2. CSS
-  - [CSS validation image](assets/images/ReadmeImages/css-validation.jpg)<br>
+  -  Warnings: The type attribute is unnecessary for JavaScript resources .  
+
+#### CSS
+
+   <h2 align="center"><img src="assets/images/ReadmeImages/css-validation.jpg"></h2>
+
   - The CSS on the website passed the W3C CSS Jigsaw validation.
   - warnings:
     1. Imported style sheets are not checked in direct input and file upload modes
     2. -webkit-min-device-pixel-ratio is a vendor extension
-3. Java Script
-   - [EdamamAPI.js validation image](assets/images/ReadmeImages/edamam-jshint.jpg)<br>
-   - [email.js validation image](assets/images/ReadmeImages/email.js-jhnit.jpg)<br>
-   - [main.js validation image](assets/images/ReadmeImages/email.js-jhnit.jpg)<br>
+
+####  Java Script
+1. EdamamAPI.js validation image
+
+      <h2 align="center"><img src="assets/images/ReadmeImages/edamam-jshint.jpg"></h2>
+
+2. email.js validation image
+
+      <h2 align="center"><img src="assets/images/ReadmeImages/email.js-jhnit.jpg"></h2>
+
+2. main.js validation image
+
+      <h2 align="center"><img src="assets/images/ReadmeImages/email.js-jhnit.jpg"></h2>
+   
    - The JavaScript on the website was validated with JSHint. No errors found.
    - Warnings
       1.  available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). <br>
@@ -229,7 +253,9 @@ I can use the website on different devices.
     	2. Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (suggestionIcon, i)	Functions declared within  loops referencing an outer scoped variable may lead to confusing semantics. (suggestionIcon, i)
       3.	Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (subscribetUserMessage, contactDiv, subscribe)     
 4. Lighthouse test
-      - [lighthouse test results image](assets/images/ReadmeImages/lightHouse.jpg)<br>
+
+     <h2 align="center"><img src="assets/images/ReadmeImages/lightHouse.jpg"></h2>
+
 ### Browser Testing
  - The website has been tested on Chrome, Vivaldi, Opera, Microsoft Edge, Firefox, and Internet Explorer. No problems were found on any of them exclude Explorer. The issue was to be a lack of support on the Internet Explorer for the CSS grid.  
 
